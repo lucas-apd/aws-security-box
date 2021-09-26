@@ -11,7 +11,7 @@ Etapas:
  - Upload do arquivo para o bucket;
  - Criação da url;
  - Cópia da url;
- - Envio da url para o amigo.
+ - Compartilhar a url.
  
 Atenção: Este projeto foi criado para fins de estudos e testes, então **não está pronto para ambiente produtivo!**
 
