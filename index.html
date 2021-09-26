@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AWS Sec Box</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2058/2058402.png" />
+</head>
+<body>
+<a class="github-fork-ribbon left-bottom fixed" href="https://github.com/lucas-apd/aws-security-box" data-ribbon="Fork me on GitHub" title="Fork me on GitHub " target="_blank">Fork me on GitHub</a>
+
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="https://github.com/lucas-apd/aws-security-box" target="_blank">GitHub </a>
+</div>
+
+<p><h1><br>AWS Security Box</h1></p>
+
+
+<div class="box">
+    <p><h3><br><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html" target="_blank" style="color:#69c"> S3 - Presigned URL</a> </h3></p>
+    <form method = "POST" action = "" enctype="multipart/form-data">
+        <label class="button button2">
+        <input type="file" id="i_file" name="fname"  style="display: none;" value="" aria-hidden="true"> Browse
+        </label>
+
+        <br>
+        <button class="button button1" type="submit"  id="i_submit" value="Submit" > Upload
+        </button>
+    </form> 
+
+    
+
+</div>
+
+{% if result %}
+<div>
+    <p><a href="{{result}}" style="color:white">Link Temporário </a></p>
+    <button onclick="myFunction()">Copiar Link</button>
+    <p><textarea name="templink" rows="10" value="" id="templink">{{result}}</textarea></p>
+</div>
+
+<div >
+    
+</div>
+{% endif %}
+
+
+ <script type="text/javascript">
+ 
+    function myFunction() {
+    var copyText = document.getElementById("templink");
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); 
+    document.execCommand("copy");
+    alert("Link Copiado para área de transferência.");
+  }
+</script>
+
+</body>
+</html>
