@@ -1,7 +1,6 @@
 from boto3 import client
 import logging
 from botocore.exceptions import ClientError
-from argparse import ArgumentParser
 from os import getenv
                 
 def upload_file(file_name, object_name=None):
