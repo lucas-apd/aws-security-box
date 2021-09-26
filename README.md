@@ -1,4 +1,17 @@
 # aws-security-box
+Este projeto usa Python3 e Flask para criar uma aplicação web que faz upload de arquivos para um bucket S3, fazendo uso do recurso ['presigned URL'](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html) da aws (criação de URL pré assinada temporária) para compartilhamento do arquivo.
+
+O código define 3600 minutos para expiração da url.
+
+Etapas:
+ - Deploy;
+ - Acesso;
+ - Seleção do arquivo;
+ - Upload do arquivo para o bucket;
+ - Criação da url;
+ - Cópia da url;
+ - Envio da url para o amigo.
+ 
 Atenção: Este projeto foi criado para fins de estudos e testes, então **não está pronto para ambiente produtivo!**
 
 ## Deployment
