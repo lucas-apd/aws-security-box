@@ -4,6 +4,7 @@ Atenção: Este projeto foi criado para fins de estudos e testes, então **não 
 ## Deployment
 
 ### Docker
+ - git clone https://github.com/lucas-apd/aws-security-box.git
  - docker build -t aws-sec-box:latest .
  - export S3_BUCKET_NAME=""
  - export AWS_ACCESS_KEY_ID=""
