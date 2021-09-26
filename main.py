@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from tempshare import upload_file
-from werkzeug.utils import secure_filename
 
 app = Flask(__name__, template_folder='template')
 
