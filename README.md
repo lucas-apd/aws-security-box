@@ -29,3 +29,7 @@ Atenção: Este projeto foi criado para fins de estudos e testes, então **não 
 
 #### Access
  - http://localhost:8080
+
+Inspirações e Referências:
+[ShareObjectPreSignedURL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
+[github-fork-ribbon-css](https://github.com/simonwhitaker/github-fork-ribbon-css)
